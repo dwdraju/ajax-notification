@@ -88,7 +88,7 @@ class Ajax_Notification {
     	
     	$html = '<div id="ajax-notification" class="updated">';
     		$html .= '<p>';
-    			$html .= __( 'The Ajax Notification example plugin is active. This message will appear until you choose to <a href="javascript:;" id="dismiss-ajax-notification">dismiss it</a>.', 'ajax-notification' );
+    			$html .= __( 'The Ajax Notification example plugin is active. This message will appear until you choose to <span class="dashicons dashicons-dismiss" id="dismiss-ajax-notification"></span>', 'ajax-notification' );
     		$html .= '</p>';
     		$html .= '<span id="ajax-notification-nonce" class="hidden">' . wp_create_nonce( 'ajax-notification-nonce' ) . '</span>';
     	$html .= '</div><!-- /.updated -->';
